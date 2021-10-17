@@ -12,5 +12,11 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "covix-web",
+    "covix-files"
+  ]
 }
