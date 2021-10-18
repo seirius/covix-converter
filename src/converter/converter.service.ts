@@ -166,7 +166,7 @@ export class ConverterService {
                     await this.extractSubtitle(file, subFilepath, sub.index);
                     this.socketService.emit(SOCKET_EVENTS.TRACK_AVAILABLE, {
                         jobId: job.id,
-                        originalName: `${sub.title}.${originalFileName}.srt`,
+                        originalName: `${sub.title}.${originalFileName}.vtt`,
                         fileId: subFilename
                     });
                     this.socketService.emit(SOCKET_EVENTS.TRACK_PROGRESS, {
